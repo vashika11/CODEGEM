@@ -3,6 +3,8 @@ flask-socketio
 python-socketio
 redis
 google-generativeai
+transformers
+torch
 gitpython
 flask-login
 gunicorn
