@@ -105,4 +105,6 @@ def on_edit_code(data):
     emit('code_update', {'code': code}, room=room, skip_sid=request.sid)
 
 if __name__ == '__main__':
-    socketio.run(app, debug=True)
+    import os
+    port = int(os.environ.get('PORT', 5000))  # Use Render's PORT or default 5000
+    socketio.run(app, host='0.0.0.0', port=port, debug=False)  # Bind to 0.0.0.0 for external access
