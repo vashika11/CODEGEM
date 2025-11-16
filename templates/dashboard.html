@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CodeGem</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">💎 CodeGem</div>
+    </header>
+    <main class="container">
+        <section class="card">
+            <h1>Welcome to Your CodeGem Dashboard</h1>
+            <p>Start collaborating on AI-generated code.</p>
+            <a href="{{ url_for('index') }}" class="btn-gem">Enter Collaboration Room</a>
+        </section>
+    </main>
+</body>
+</html>

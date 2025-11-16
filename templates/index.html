@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeGem - AI Code Collab</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">💎 CodeGem</div>
+        <p>Unlock AI-Powered Code Collaboration</p>
+    </header>
+    <main class="container">
+        <section class="card">
+            <h1>Generate & Collaborate</h1>
+            <form action="/generate" method="post" class="form">
+                <input type="text" name="prompt" placeholder="Enter your code prompt (e.g., 'Write a Python function for sorting')" required>
+                <input type="text" name="room" placeholder="Room ID (e.g., 'team-project')" required>
+                <button type="submit" class="btn-gem">Generate Code</button>
+            </form>
+        </section>
+        <section class="card">
+            <h2>Live Code</h2>
+            <div class="code-display">{{ code or 'Your generated code will appear here...' }}</div>
+        </section>
+        <section class="card">
+            <h2>Live Preview</h2>
+            <div class="preview">{{ preview or 'Preview will render here...' }}</div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2023 CodeGem. Built with Python & AI.</p>
+    </footer>
+    <!-- Real-time updates handled via server polling (add meta refresh or SSE in Flask) -->
+</body>
+</html>
