@@ -13,10 +13,10 @@ A Python-based web platform for collaborative coding with AI assistance. Leverag
 
 ## Tech Stack
 - **Back-End**: Flask, Flask-SocketIO, Python-SocketIO
-- **AI/ML**: Google Generative AI, Hugging Face Transformers (GPT-2 for prompt refinement)
+- **AI/ML**: Google Generative AI, Hugging Face Transformers
 - **Caching**: Redis
 - **Versioning**: GitPython
-- **Front-End**: Jinja2 templates (no JS), custom CSS for aesthetics
+- **Front-End**: Jinja2 templates, custom CSS 
 
 ## Prerequisites
 - Python 3.8+
@@ -27,7 +27,7 @@ A Python-based web platform for collaborative coding with AI assistance. Leverag
 1. Clone the repo: `git clone https://github.com/vashika11/codegem.git`
 2. Install dependencies: `pip install -r requirements.txt`
 3. Start Redis: `redis-server`
-4. Set your Gemini API key in `app.py` (replace `'your-gemini-api-key'`).
+4. Set your Gemini API key in `app.py`.
 5. Run the app: `python app.py`
 6. Open `http://localhost:5000` in your browser.
 
