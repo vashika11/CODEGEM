@@ -23,14 +23,6 @@ A Python-based web platform for collaborative coding with AI assistance. Leverag
 - Redis server (local or cloud)
 - Google Gemini API key (from Google AI Studio)
 
-## Installation
-1. Clone the repo: `git clone https://github.com/vashika11/codegem.git`
-2. Install dependencies: `pip install -r requirements.txt`
-3. Start Redis: `redis-server`
-4. Set your Gemini API key in `app.py`.
-5. Run the app: `python app.py`
-6. Open `http://localhost:5000` in your browser.
-
 ## Usage
 - Log in to create a session.
 - Join a room and enter prompts to generate code.
@@ -39,7 +31,7 @@ A Python-based web platform for collaborative coding with AI assistance. Leverag
 
 ## Deployment
 - Use Gunicorn for production: `gunicorn -k gevent app:app`
-- Deploy on Heroku, AWS, or Docker.
+- Deploy on Heroku, Render, AWS, or Docker.
 - Monitor uptime with tools like UptimeRobot.
 
 ## License
